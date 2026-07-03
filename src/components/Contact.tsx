@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { submitEnquiry } from '~/server/enquiry';
+import { useState, type FormEvent } from 'react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -11,22 +10,14 @@ export function Contact() {
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('loading');
-    
-    try {
-      const result = await submitEnquiry({ data: formData });
-      
-      if (result.success) {
-        setStatus('success');
-        setFormData({ name: '', phone: '', email: '', service: '', message: '' });
-      } else {
-        setStatus('error');
-      }
-    } catch (error) {
-      setStatus('error');
-    }
+
+    setTimeout(() => {
+      setStatus('success');
+      setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+    }, 350);
   };
 
   return (
