@@ -1,10 +1,10 @@
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero.png"
+          src="images/hero.png"
           alt="Construction and Plumbing Service"
           className="h-full w-full object-cover"
         />

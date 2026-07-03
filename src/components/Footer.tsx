@@ -1,5 +1,3 @@
-import { Link } from '@tanstack/react-router';
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
   
@@ -9,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Col */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-6">
+            <a href="#home" className="flex items-center gap-2 mb-6">
               <div className="relative h-10 w-10 flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
@@ -36,7 +34,7 @@ export function Footer() {
               <span className="text-xl font-bold tracking-tight">
                 Avo <span className="text-blue-500">Plumbers</span>
               </span>
-            </Link>
+            </a>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Professional plumbing and construction services in Durban. Quality workmanship and reliable service guaranteed.
             </p>
@@ -54,7 +52,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4 text-gray-400">
-              <li><a href="#" className="hover:text-blue-500 transition-colors">Home</a></li>
+              <li><a href="#home" className="hover:text-blue-500 transition-colors">Home</a></li>
               <li><a href="#about" className="hover:text-blue-500 transition-colors">About Us</a></li>
               <li><a href="#services" className="hover:text-blue-500 transition-colors">Services</a></li>
               <li><a href="#projects" className="hover:text-blue-500 transition-colors">Our Projects</a></li>

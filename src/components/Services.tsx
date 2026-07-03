@@ -27,7 +27,7 @@ export function Services() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow group">
             <div className="h-64 relative overflow-hidden">
               <img
-                src="/images/plumbing-service.png"
+                src="images/plumbing-service.png"
                 alt="Plumbing Services"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -61,7 +61,7 @@ export function Services() {
           <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow group">
             <div className="h-64 relative overflow-hidden">
               <img
-                src="/images/construction-service.png"
+                src="images/construction-service.png"
                 alt="Construction Services"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

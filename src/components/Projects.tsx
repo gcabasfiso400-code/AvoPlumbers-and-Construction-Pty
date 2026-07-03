@@ -3,32 +3,32 @@ export function Projects() {
     {
       title: "Modern Home Renovation",
       category: "Construction",
-      image: "/images/project-renovation.png",
+      image: "images/project-renovation.png",
     },
     {
       title: "Industrial Plumbing System",
       category: "Plumbing",
-      image: "/images/project-industrial.png",
+      image: "images/project-industrial.png",
     },
     {
       title: "Commercial Office Build",
       category: "Construction",
-      image: "/images/construction-service.png",
+      image: "images/construction-service.png",
     },
     {
       title: "Residential Bathroom Remodel",
       category: "Plumbing",
-      image: "/images/plumbing-service.png",
+      image: "images/plumbing-service.png",
     },
     {
       title: "New Residential Home",
       category: "Construction",
-      image: "/images/hero.png",
+      image: "images/hero.png",
     },
     {
       title: "Leak Detection & Repair",
       category: "Plumbing",
-      image: "/images/plumbing-service.png",
+      image: "images/plumbing-service.png",
     },
   ];
 

@@ -6,7 +6,7 @@ export function About() {
           <div className="lg:w-1/2 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/construction-service.png"
+                src="images/construction-service.png"
                 alt="Avo Plumbers and Construction Team"
                 className="w-full h-auto"
               />

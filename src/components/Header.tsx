@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from '@tanstack/react-router';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,7 +13,7 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '#home' },
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
@@ -31,7 +30,7 @@ export function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo & Name */}
-          <Link href="/" className="flex items-center gap-2">
+          <a href="#home" className="flex items-center gap-2">
             <div className="relative h-10 w-10 flex items-center justify-center">
               <svg
                 viewBox="0 0 100 100"
@@ -62,7 +61,7 @@ export function Header() {
             >
               Avo <span className="text-blue-600">Plumbers</span> & Construction
             </span>
-          </Link>
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
