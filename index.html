@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avo Plumbers and Construction</title>
+  <meta name="description" content="Avo Plumbers & Construction delivers reliable plumbing, renovations, and construction services across Durban and surrounding areas." />
+  <title>Avo Plumbers & Construction</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,12 +12,12 @@
     <div class="container navbar">
       <a href="#home" class="brand">
         <span class="brand-mark">A</span>
-        Avo Plumbers & Construction
+        <span>Avo Plumbers & Construction</span>
       </a>
-      <button class="menu-button btn-secondary">Menu</button>
-      <nav class="nav-links">
+      <button class="menu-button" type="button" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links" aria-label="Primary navigation">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#testimonials">Testimonials</a>
@@ -30,86 +31,209 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Durban Plumbing & Construction</p>
-          <h1>Reliable, Local Plumbing and Building Services for Your Home or Business</h1>
-          <p>From emergency leak repair to full home renovation and commercial fit-outs, Avo Plumbers and Construction delivers modern workmanship with fast response and trusted service.</p>
+          <h1>Reliable Plumbing & Construction Services You Can Trust</h1>
+          <p>Professional support for residential, commercial, and industrial projects in Durban and surrounding areas. From emergency repairs to full-scale building work, we deliver quality you can count on.</p>
+          <div class="hero-highlight">
+            <strong>10+</strong>
+            <span>Years of Experience</span>
+          </div>
           <div class="cta-group">
-            <a class="btn-primary" href="#contact">Request a Quote</a>
-            <a class="btn-secondary" href="tel:0810886842">Call 081 088 6842</a>
+            <a class="btn-primary" href="#contact">Request a Free Quote</a>
+            <a class="btn-secondary" href="tel:0810886842">Call Now – 081 088 6842</a>
           </div>
         </div>
         <div class="hero-image">
-          <img src="images/hero.png" alt="Hero plumbing and construction" />
+          <img src="images/hero.png" alt="Construction and plumbing service" />
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">Your Trusted Durban Plumbing and Construction Partner</h2>
-        <p class="section-subtitle">Avo Plumbers and Construction provides dependable plumbing repairs, renovations, and building services for homeowners, businesses, and industrial clients across Durban and surrounding areas.</p>
-        <div class="cards grid-2 columns-2">
+        <div class="section-heading">
+          <p class="eyebrow">About Our Company</p>
+          <h2 class="section-title">Durban’s Trusted Partner for Plumbing and Construction</h2>
+          <p class="section-subtitle">Based in KwaMashu and serving the greater Durban area, Avo Plumbers and Construction (Pty) Ltd has built a reputation for excellence through dedication, skilled craftsmanship, and unwavering commitment to safety.</p>
+        </div>
+        <div class="feature-grid">
           <div class="card">
             <div class="card-content">
-              <h3>Experienced Technicians</h3>
-              <p>Our team is trained, licensed, and equipped to handle residential, commercial, and industrial plumbing and construction jobs.</p>
+              <h3>Licensed & Certified</h3>
+              <p>Our team is trained, qualified, and equipped to handle projects of all sizes with professionalism and care.</p>
             </div>
           </div>
           <div class="card">
             <div class="card-content">
-              <h3>Responsive Service</h3>
-              <p>We prioritize prompt support for emergencies and scheduled projects, keeping communication clear every step of the way.</p>
+              <h3>Available for Emergencies</h3>
+              <p>We respond quickly when you need urgent repairs, leak control, or plumbing support at short notice.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Quality Guaranteed</h3>
+              <p>Every job is completed with attention to detail and a strong focus on long-lasting results.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Competitive Pricing</h3>
+              <p>We offer transparent quotes with no hidden costs so you can plan your project with confidence.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Safe Working Practices</h3>
+              <p>Health, safety, and property protection are always built into the way we work.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Timely Project Completion</h3>
+              <p>We respect deadlines and work to deliver dependable outcomes without compromising quality.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">What We Do</h2>
-        <p class="section-subtitle">Full-service plumbing and construction solutions with skilled workmanship, reliable materials, and transparent pricing.</p>
-        <div class="grid-2 columns-2">
-          <div class="card">
+        <div class="section-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2 class="section-title">Our Specialist Services</h2>
+          <p class="section-subtitle">We provide a comprehensive range of plumbing and construction services tailored to meet the specific needs of residential, commercial, and industrial clients.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card service-card">
             <img src="images/plumbing-service.png" alt="Plumbing services" />
             <div class="card-content">
               <h3>Plumbing Services</h3>
-              <p>Leak repairs, drain clearing, geyser installation, tap replacements, bathroom plumbing, and emergency plumbing response.</p>
+              <ul>
+                <li>General Plumbing</li>
+                <li>Leak Detection</li>
+                <li>Burst Pipe Repairs</li>
+                <li>Drain Cleaning</li>
+                <li>Geyser Installation & Repairs</li>
+                <li>Bathroom & Kitchen Plumbing</li>
+                <li>Emergency Plumbing</li>
+              </ul>
+              <a class="btn-secondary" href="#contact">Request Plumbing Quote</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card service-card">
             <img src="images/construction-service.png" alt="Construction services" />
             <div class="card-content">
-              <h3>Construction & Renovations</h3>
-              <p>Home renovations, building extensions, renovations, commercial fit-outs, and quality construction management.</p>
+              <h3>Construction Services</h3>
+              <ul>
+                <li>Residential Construction</li>
+                <li>Commercial Construction</li>
+                <li>Industrial Projects</li>
+                <li>Home Renovations</li>
+                <li>Building Extensions</li>
+                <li>Bricklaying, Roofing & Painting</li>
+                <li>General Maintenance</li>
+              </ul>
+              <a class="btn-secondary" href="#contact">Request Construction Quote</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="why-us" class="section">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="grid-3 columns-3">
+        <div class="section-heading">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 class="section-title">Dedicated to Providing the Best Possible Service</h2>
+        </div>
+        <div class="feature-grid why-grid">
           <div class="card">
-            <img src="images/project-renovation.png" alt="Renovation project" />
             <div class="card-content">
-              <h3>Home Renovation</h3>
-              <p>Modern kitchen and bathroom upgrades built to last.</p>
+              <h3>Experienced Professionals</h3>
+              <p>Our team consists of highly skilled tradespeople with years of industry experience.</p>
             </div>
           </div>
           <div class="card">
-            <img src="images/project-industrial.png" alt="Industrial plumbing" />
             <div class="card-content">
-              <h3>Industrial Plumbing</h3>
-              <p>Large-scale installation and maintenance for industrial facilities.</p>
+              <h3>Quality Workmanship</h3>
+              <p>We never compromise on quality, using the best materials and techniques for every job.</p>
             </div>
           </div>
           <div class="card">
-            <img src="images/plumbing-service.png" alt="Plumbing upgrade" />
             <div class="card-content">
-              <h3>Residential Plumbing</h3>
-              <p>Reliable domestic plumbing repairs and new installations.</p>
+              <h3>Affordable Pricing</h3>
+              <p>We provide transparent, competitive quotes with no hidden costs or surprises.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Reliable Service</h3>
+              <p>We respect your time and property, always arriving as scheduled and cleaning up after ourselves.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Residential & Commercial</h3>
+              <p>We have the expertise to handle projects of all scales, from small homes to large industrial sites.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Satisfaction Guaranteed</h3>
+              <p>Your happiness is our priority. We work until you are completely satisfied with the result.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card project-card">
+            <img src="images/project-renovation.png" alt="Modern home renovation" />
+            <div class="card-content">
+              <p class="project-tag">Construction</p>
+              <h3>Modern Home Renovation</h3>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img src="images/project-industrial.png" alt="Industrial plumbing system" />
+            <div class="card-content">
+              <p class="project-tag">Plumbing</p>
+              <h3>Industrial Plumbing System</h3>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img src="images/construction-service.png" alt="Commercial office build" />
+            <div class="card-content">
+              <p class="project-tag">Construction</p>
+              <h3>Commercial Office Build</h3>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img src="images/plumbing-service.png" alt="Residential bathroom remodel" />
+            <div class="card-content">
+              <p class="project-tag">Plumbing</p>
+              <h3>Residential Bathroom Remodel</h3>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img src="images/hero.png" alt="New residential home" />
+            <div class="card-content">
+              <p class="project-tag">Construction</p>
+              <h3>New Residential Home</h3>
+            </div>
+          </div>
+          <div class="card project-card">
+            <img src="images/plumbing-service.png" alt="Leak detection and repair" />
+            <div class="card-content">
+              <p class="project-tag">Plumbing</p>
+              <h3>Leak Detection & Repair</h3>
             </div>
           </div>
         </div>
@@ -118,32 +242,48 @@
 
     <section id="testimonials" class="section">
       <div class="container">
-        <h2 class="section-title">What Customers Say</h2>
-        <div class="cards grid-3 columns-3">
+        <div class="section-heading">
+          <p class="eyebrow">Testimonials</p>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <div class="rating-pill">★★★★★ 5.0 Google Rating & Client Reviews</div>
+        </div>
+        <div class="grid-3">
           <div class="testimonial-card">
-            <p>Excellent service, fast response and very professional. Our new bathroom is perfect.</p>
-            <div class="testimonial-author"><strong>Nomsa M.</strong><span>Homeowner</span></div>
+            <p>“Avo Plumbers did an amazing job fixing my burst pipes. They arrived quickly and were very professional. Highly recommended!”</p>
+            <div class="testimonial-author"><strong>Sipho Mkhize</strong><span>Homeowner</span></div>
           </div>
           <div class="testimonial-card">
-            <p>Great communication and quality workmanship. They handled our business plumbing upgrade smoothly.</p>
-            <div class="testimonial-author"><strong>Thabo K.</strong><span>Business Owner</span></div>
+            <p>“I’ve worked with them on several commercial projects. Their construction work is top-notch and they always stay on schedule.”</p>
+            <div class="testimonial-author"><strong>Sarah Govender</strong><span>Property Manager</span></div>
           </div>
           <div class="testimonial-card">
-            <p>Reliable team, good pricing and excellent finish. I recommend them for any construction or plumbing job.</p>
-            <div class="testimonial-author"><strong>Anele N.</strong><span>Property Manager</span></div>
+            <p>“Reliable and affordable service. They renovated our office bathroom and the quality of work was exceptional.”</p>
+            <div class="testimonial-author"><strong>David Smith</strong><span>Business Owner</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container grid-2 columns-2">
-        <div class="contact-card">
-          <h2 class="section-title">Get in Touch</h2>
-          <p>Contact us for a free quote or emergency plumbing assistance across Durban and surrounding areas.</p>
-          <p><strong>Phone:</strong> <a href="tel:0810886842">081 088 6842</a></p>
-          <p><strong>Address:</strong> M579 Ntethe Road, KwaMashu M, KwaMashu, 4360</p>
-          <p><strong>Hours:</strong> Mon-Fri 08:00 - 17:00, Sat 08:00 - 13:00</p>
+    <section id="contact" class="section section-alt">
+      <div class="container grid-2 contact-layout">
+        <div class="contact-card info-card">
+          <p class="eyebrow">Contact Us</p>
+          <h2 class="section-title">Get a Professional Quote Today</h2>
+          <p>Have a plumbing emergency or planning a construction project? Contact us now for reliable service and competitive pricing.</p>
+          <div class="contact-list">
+            <div>
+              <h3>Call Us</h3>
+              <a href="tel:0810886842">081 088 6842</a>
+            </div>
+            <div>
+              <h3>Our Location</h3>
+              <p>M579 Ntethe Road, KwaMashu M, KwaMashu, 4360</p>
+            </div>
+            <div>
+              <h3>Business Hours</h3>
+              <p>Mon – Fri: 08:00 – 17:00<br />Sat: 08:00 – 13:00<br />24/7 Emergency Plumbing Available</p>
+            </div>
+          </div>
         </div>
         <form id="contact-form" class="contact-card">
           <h3>Send an enquiry</h3>
@@ -151,10 +291,17 @@
             <input class="input" type="text" name="name" placeholder="Full Name" required />
             <input class="input" type="tel" name="phone" placeholder="Phone Number" required />
             <input class="input" type="email" name="email" placeholder="Email Address" required />
-            <input class="input" type="text" name="service" placeholder="Service Required" required />
+            <select class="input" name="service" required>
+              <option value="">Service Required</option>
+              <option>Plumbing - General</option>
+              <option>Plumbing - Emergency</option>
+              <option>Construction - New Build</option>
+              <option>Construction - Renovation</option>
+              <option>Other</option>
+            </select>
           </div>
-          <textarea class="textarea" name="message" placeholder="How can we help you?" required></textarea>
-          <button class="btn-primary" type="submit">Send Message</button>
+          <textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+          <button class="btn-primary" type="submit">Send Enquiry</button>
           <p id="contact-status"></p>
         </form>
       </div>
@@ -164,15 +311,30 @@
   <footer class="footer section">
     <div class="container footer-columns">
       <div>
-        <h4>About Avo Plumbers</h4>
-        <p>Trusted Durban-based plumbing and construction professionals delivering honest service and quality workmanship.</p>
+        <h4>Avo Plumbers</h4>
+        <p>Professional plumbing and construction services in Durban. Quality workmanship and reliable service guaranteed.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <a href="#home">Home</a><br />
+        <a href="#about">About Us</a><br />
         <a href="#services">Services</a><br />
         <a href="#projects">Projects</a><br />
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <a href="#services">Emergency Plumbing</a><br />
+        <a href="#services">Leak Detection</a><br />
+        <a href="#services">Home Renovations</a><br />
+        <a href="#services">Building Extensions</a><br />
+        <a href="#services">Industrial Projects</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <p>M579 Ntethe Road, KwaMashu M, KwaMashu, 4360</p>
+        <a href="tel:0810886842">081 088 6842</a>
+        <p>Mon-Sat: 08:00 - 17:00</p>
       </div>
     </div>
   </footer>

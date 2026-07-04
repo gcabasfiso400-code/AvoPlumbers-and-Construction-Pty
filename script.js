@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const nav = document.querySelector('.navbar');
   const menuButton = document.querySelector('.menu-button');
   const navLinks = document.querySelector('.nav-links');
 
   if (menuButton && navLinks) {
     menuButton.addEventListener('click', () => {
       navLinks.classList.toggle('show');
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+      });
     });
   }
 
