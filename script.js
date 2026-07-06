@@ -1,33 +1,49 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.querySelector('.menu-button');
-  const navLinks = document.querySelector('.nav-links');
+const header = document.querySelector('.site-header');
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+const form = document.getElementById('inquiry-form');
+const status = document.getElementById('form-status');
+const year = document.getElementById('year');
 
-  if (menuButton && navLinks) {
-    menuButton.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
-    navLinks.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-      });
-    });
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    header?.classList.add('scrolled');
+  } else {
+    header?.classList.remove('scrolled');
   }
+});
 
-  const form = document.querySelector('#contact-form');
-  const statusText = document.querySelector('#contact-status');
+menuToggle?.addEventListener('click', () => {
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', String(!expanded));
+  mobileNav?.classList.toggle('is-open');
+});
 
-  if (form && statusText) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      statusText.textContent = 'Sending your enquiry...';
-      statusText.style.color = '#2563eb';
+mobileNav?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    mobileNav?.classList.remove('is-open');
+  });
+});
 
-      window.setTimeout(() => {
-        statusText.textContent = 'Thank you! Your enquiry has been sent successfully.';
-        statusText.style.color = '#16a34a';
-        form.reset();
-      }, 650);
-    });
-  }
+form?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+  const name = (data.get('name') || '').toString().trim();
+  const phone = (data.get('phone') || '').toString().trim();
+  const email = (data.get('email') || '').toString().trim();
+  const service = (data.get('service') || '').toString().trim();
+  const message = (data.get('message') || '').toString().trim();
+  const subject = encodeURIComponent(`Enquiry: ${service || 'General'}`);
+  const body = encodeURIComponent(
+    `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${message}`
+  );
+
+  status.textContent = 'Opening your email app...';
+  window.location.href = `mailto:sphelele@avopc.co.za?subject=${subject}&body=${body}`;
+  form.reset();
 });
